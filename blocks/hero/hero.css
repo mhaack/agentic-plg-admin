@@ -76,6 +76,18 @@
     .hero-heading {
       margin: 0;
     }
+
+    .back-action {
+      position: absolute;
+      bottom: 5px;
+      right: 0px;
+      padding: 6px 10px;
+      font-size: var(--body-font-size-xs);
+      border: 2px solid var(--color-gray-600);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 500;
+    }
   }
 
   &.center {

@@ -40,4 +40,15 @@ export default async function init(el) {
     bg.classList.add('hero-background');
     decorateBackground(el, bg);
   }
+  if (el.classList.contains('back-action')) {
+    const backAction = document.createElement('a');
+    backAction.classList.add('back-action');
+    backAction.textContent = 'Back';
+    backAction.href = '#';
+    backAction.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.history.back();
+    });
+    fg.querySelector('div').append(backAction);
+  }
 }
